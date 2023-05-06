@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="type_your_email">Type your Email</string>
+    <string name="type_your_password">Type Your Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="not_registered_yet_sign_up">Not Registered Yet , Sign Up !</string>
+    <string name="already_registered_sign_in">Already Registered , Sign In !</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="retype_your_password">Retype Your Password</string>
+    <string name="owner_s_name">Owner\'s Name</string>
+    <string name="electricity_bill_calculator">Electricity Bill Calculator</string>
+    <string name="enter_the_units">Enter the Units</string>
+    <string name="enter_starting_date">Enter Starting Date</string>
+    <string name="enter_ending_date">Enter Ending Date</string>
+    <string name="calculate">Calculate</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="rs_0000_00">Rs. 0000.00</string>
+    <string name="water_bill_calculator">Water Bill Calculator</string>
+    <string name="result_text">Units: %d\nPrice: $%.2f</string>
+
+</resources>
