@@ -1,7 +1,7 @@
 package com.example.reviews
 
 
-//MAD
+//mad
 
 import android.app.AlertDialog
 import android.view.Gravity
