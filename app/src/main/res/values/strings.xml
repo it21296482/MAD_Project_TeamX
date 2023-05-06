@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">crud</string>
+    <string name="floatingActionButton" />
+    <string name="txturl" />
+</resources>
