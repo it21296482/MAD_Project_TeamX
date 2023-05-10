@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.FirebaseDatabase
 
 class MyAdapter (private val fuelList : ArrayList<User>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
@@ -17,7 +18,7 @@ class MyAdapter (private val fuelList : ArrayList<User>) : RecyclerView.Adapter<
         return MyViewHolder(itemView)
 
     }
-
+    var database = FirebaseDatabase.getInstance().reference
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
 
         val currentitem = fuelList[position]

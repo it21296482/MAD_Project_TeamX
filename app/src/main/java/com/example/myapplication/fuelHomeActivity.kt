@@ -1,13 +1,17 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
+import com.example.myapplication.databinding.ActivityFuelHomeBinding
 
-class fuelHomeActivity : AppCompatActivity() {
 
+class FuelHomeActivity : AppCompatActivity() {
+
+    private lateinit var binding : FuelHomeActivity
     private lateinit var dbref : DatabaseReference
     private lateinit var userRecyclerView: RecyclerView
     private lateinit var userArrayList: ArrayList<User>
@@ -22,6 +26,11 @@ class fuelHomeActivity : AppCompatActivity() {
 
         userArrayList = arrayListOf<User>()
         getUserData()
+
+        binding.addPass.setOnClickListener {
+            val intent = Intent(this, WaterActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

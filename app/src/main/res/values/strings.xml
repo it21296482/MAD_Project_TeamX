@@ -17,5 +17,28 @@
     <string name="rs_0000_00">Rs. 0000.00</string>
     <string name="water_bill_calculator">Water Bill Calculator</string>
     <string name="result_text">Units: %d\nPrice: $%.2f</string>
+    <string name="user_profile">User Profile</string>
+    <string name="bill_calculator">Bill Calculator</string>
+    <string name="fuel_pass">Fuel Pass</string>
+    <string name="delete">delete</string>
+    <string name="add">add</string>
+    <string name="edit">Edit</string>
+    <string name="_75_44_nugagaha_road_kottama">75/44, nugagaha road, Kottama</string>
+    <string name="address">Address</string>
+    <string name="b76286732">B76286732</string>
+    <string name="licnece_no">Licnece No</string>
+    <string name="_200121602055">200121602055</string>
+    <string name="nic_no">NIC No</string>
+    <string name="cbj_2323">CBJ - 2323</string>
+    <string name="vehical_reg_no">Vehical Reg No</string>
+    <string name="ravindu_alwis">Ravindu Alwis</string>
+    <string name="fuel_pass2">Fuel Pass</string>
+    <string name="enter_the_owner_name">Enter the Owner Name</string>
+    <string name="add_new_fuel_pass">Add New Fuel Pass</string>
+    <string name="enter_the_vehical_no">Enter the Vehical No</string>
+    <string name="enter_nic_no">Enter NIC No</string>
+    <string name="enter_the_licence_no">Enter the Licence No</string>
+    <string name="enter_the_address">Enter the Address</string>
+    <string name="add_pass">Add Pass</string>
 
 </resources>

@@ -1,32 +1,40 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.myapplication.databinding.ActivityWaterBinding
 
 class WaterActivity : AppCompatActivity() {
 
     private lateinit var unitsInput: EditText
-    private lateinit var calculateButton: Button
     private lateinit var resultTextView: TextView
+    private lateinit var binding: ActivityWaterBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_water)
+        binding = ActivityWaterBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         unitsInput = findViewById(R.id.unitW)
-        calculateButton = findViewById(R.id.calBtnw)
         resultTextView = findViewById(R.id.priceW)
 
-        calculateButton.setOnClickListener {
+        binding.calBtnW.setOnClickListener {
             val units = unitsInput.text.toString().toInt()
 
             val price = calculatePrice(units)
 
-            resultTextView.text = getString(R.string.result_text, units, price)
+            resultTextView.text = String.format("Rs.%.2f", price)
+
         }
+
+        binding.eleBtn.setOnClickListener {
+            val intent = Intent(this, ElecActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun calculatePrice(units: Int): Double {

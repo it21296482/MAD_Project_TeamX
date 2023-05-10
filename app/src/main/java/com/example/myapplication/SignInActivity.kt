@@ -19,11 +19,11 @@ class SignInActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
-        binding.textView.setOnClickListener {
+        binding.signupLink.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
-        binding.button.setOnClickListener {
+        binding.signinbtn.setOnClickListener {
             val email = binding.emailEt.text.toString()
             val pass = binding.passET.text.toString()
 
@@ -38,7 +38,7 @@ class SignInActivity : AppCompatActivity() {
                     }
                 }
             } else {
-                Toast.makeText(this, "Password is not matching", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Email and password are required", Toast.LENGTH_SHORT).show()
             }
 
         }
